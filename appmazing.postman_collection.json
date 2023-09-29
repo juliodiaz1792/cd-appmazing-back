@@ -398,6 +398,130 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Test Controller -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/category/test",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"category",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query Category -R",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/category/get",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"category",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QueryAll Category -R",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category -C",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Estropeado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/category/add",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category -U",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Fresh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/category/put",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"category",
+								"put"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category -D",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
