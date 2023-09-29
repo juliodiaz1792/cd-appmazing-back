@@ -1,0 +1,403 @@
+{
+	"info": {
+		"_postman_id": "e0781b40-d0c3-4641-8c5b-dbc9496e6236",
+		"name": "appmazing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30114079"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Test Controller -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/products",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Controller -R",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Julio",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Controller Method -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/products/testMethod",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"testMethod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product -R",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products/get",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Product -R",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product -C",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Olive Oil\",\r\n    \"stock\": 125,\r\n    \"price\": 4.45,\r\n    \"active\": true,\r\n    \"date_added\": \"2022-12-31T23:00:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products/add",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product -U",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": ,\r\n    \"name\" : \"Olive Oil\",\r\n    \"stock\": 125,\r\n    \"price\": 14.45,\r\n    \"active\": true,\r\n    \"date_added\": \"2022-12-31T23:00:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products/put",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"put"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product -D",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/products/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"products",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Test Controller -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/contact",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Controller -R",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Julio",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/contact",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact -R",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/contact/get",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contact",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Contact -R",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:30030/contact/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contact",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Contact -C",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Javier\",\r\n    \"first_surname\": \"Garcia\",\r\n    \"second_surname\": \"Pereira\",\r\n    \"phone\": 654231981,\r\n    \"mail\": \"javier@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/contact/add",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contact",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Contact -U",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"name\": \"Javier\",\r\n    \"first_surname\": \"Garcia\",\r\n    \"second_surname\": \"Pereira II\",\r\n    \"phone\": 654231981,\r\n    \"mail\": \"javier@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/contact/put",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contact",
+								"put"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Contact -D",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:30030/contact/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "30030",
+							"path": [
+								"contact",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
