@@ -8,6 +8,8 @@ import com.campusdual.appmazing.model.dto.dtomapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
 import java.util.List;
 
 @Service("ProductService")
@@ -51,4 +53,23 @@ public class ProductService implements iProductService {
         this.productDAO.delete(product);
         return id;
     }
+
+    @Override
+    public int buyProduct(ProductDTO product, int quantity) {
+        ProductDTO productToBuy = this.queryProduct(product);
+        if (productToBuy.isActive() && quantity <= productToBuy.getStock()) {
+            productToBuy.setStock(productToBuy.getStock() - quantity);
+            this.updateProduct(productToBuy);
+        }
+        return productToBuy.getStock();
+    }
+
+    @Override
+    public BigDecimal calculateAndDecreasePrice(ProductDTO product, int quantity) {
+        ProductDTO productToBuy = this.queryProduct(product);
+        return productToBuy.getPrice().multiply(BigDecimal.valueOf(quantity));
+    }
+
+    //Cuanto costaría comprar esa cantidad de elementos calculateAndDecreasePrice()
+
 }

@@ -21,6 +21,9 @@ public class Product {
     private boolean active;
     @Column
     private Date date_added;
+    @ManyToOne
+    @JoinColumn(name = "category")
+    private Category category;
 
     //Getter and setter
     public int getId() {
@@ -58,5 +61,11 @@ public class Product {
     }
     public void setDate_added(Date date_added) {
         this.date_added = date_added;
+    }
+    public Category getCategory() {
+        return category;
+    }
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

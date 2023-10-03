@@ -1,9 +1,13 @@
 package com.campusdual.appmazing.service;
 
 import com.campusdual.appmazing.api.iContactService;
+import com.campusdual.appmazing.api.iProductService;
 import com.campusdual.appmazing.model.Contact;
+import com.campusdual.appmazing.model.Product;
 import com.campusdual.appmazing.model.dao.ContactDAO;
+import com.campusdual.appmazing.model.dao.ProductDAO;
 import com.campusdual.appmazing.model.dto.ContactDTO;
+import com.campusdual.appmazing.model.dto.ProductDTO;
 import com.campusdual.appmazing.model.dto.dtomapper.ContactMapper;
 import com.campusdual.appmazing.model.dto.dtomapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +21,9 @@ public class ContactService implements iContactService {
 
     @Autowired
     private ContactDAO contactDAO;
+
+    @Autowired
+    private iProductService productService;
 
     @Override
     public ContactDTO queryContact(ContactDTO contactDTO) {
